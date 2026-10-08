@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="AOE@WSDM 2027 — Workshop on Agent-in-the-Loop Optimization for E-commerce AI Systems, February 19, 2027 in Hong Kong.">
   <title>AOE@WSDM 2027</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307182b'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%2342d6d0' stroke-width='4'/%3E%3Ccircle cx='32' cy='12' r='5' fill='%23f4af4f'/%3E%3Cpath d='M19 39h26' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23dff4eb'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23248675' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='12' fill='none' stroke='%234e91bd' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23dd7d58'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -30,78 +30,105 @@
 
   <main id="main">
     <section class="hero">
-      <div class="loop-visual" aria-hidden="true">
-        <div class="loop-ring"></div><div class="loop-ring"></div><div class="loop-core">AOE</div>
-      </div>
-      <div class="container hero-inner">
-        <p class="eyebrow">In-person workshop · WSDM 2027</p>
-        <h1><em>Agent-in-the-Loop</em> Optimization for E-commerce AI Systems</h1>
-        <p class="hero-summary">A focused forum for agents that support people, improve AI systems, and learn within evolving e-commerce environments.</p>
-        <div class="hero-meta">
-          <div class="meta-item"><strong>February 19, 2027</strong><span>Date</span></div>
-          <div class="meta-item"><strong>Hong Kong, China</strong><span>Location</span></div>
-          <div class="meta-item"><strong>Half-day · In person</strong><span>Format</span></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy" data-reveal>
+            <h1><span class="hero-title-main"><em>Agent-in-the-Loop</em> Optimization</span><span class="hero-title-sub">for E-commerce AI Systems</span></h1>
+            <p class="hero-summary">AOE brings together research on agents for e-commerce participants, agents for system optimization, and stateful environments for learning and evaluation.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="cfp.html">Read the call for papers</a>
+              <a class="button button-secondary" href="program.html">Explore the program</a>
+            </div>
+          </div>
         </div>
-        <div class="hero-actions">
-          <a class="button button-primary" href="cfp.html">Read the call for papers</a>
-          <a class="button button-secondary" href="program.html">View the program</a>
+        <div class="hero-meta" data-reveal>
+          <div class="meta-item"><span>Date</span><strong>February 19, 2027</strong></div>
+          <div class="meta-item"><span>Location</span><strong>Hong Kong, China</strong></div>
+          <div class="meta-item"><span>Format</span><strong>Half-day · In person</strong></div>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-white">
-      <div class="container intro-grid">
-        <div class="intro-copy" data-reveal>
-          <p>E-commerce AI is moving beyond static prediction pipelines toward closed-loop systems in which agents interpret goals, use tools, retain experience, conduct experiments, and adapt decisions over time.</p>
-          <p>AOE connects two directions that are often studied apart: agents that assist consumers, merchants, advertisers, and operators; and agents that automate research, evaluation, deployment, and system improvement.</p>
-          <p>The research agenda is organized around three coupled loops: interaction, system optimization, and agent–environment.</p>
-          <p>The workshop brings together researchers and practitioners across information retrieval, recommender systems, computational advertising, multi-agent systems, human–AI interaction, and industrial AI.</p>
+        <div class="award-banner" data-reveal>
+          <div class="award-symbol" aria-hidden="true">★</div>
+          <div class="award-copy"><strong>Best Paper Award</strong><span>Outstanding work presented at AOE@WSDM 2027 will be recognized during the closing session.</span></div>
+          <a href="cfp.html">Call for Papers →</a>
         </div>
-        <aside class="question-card" data-reveal>
-          <span>Central question</span>
-          <blockquote>How can e-commerce systems optimize through agents when every intervention changes the environment and the evidence?</blockquote>
+        <aside class="commerce-panel" aria-label="E-commerce AI topics" data-reveal>
+          <strong>E-commerce AI</strong>
+          <div class="commerce-grid">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>Product search</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/></svg>Recommendation</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17V10M10 17V6M16 17v-4M3 20h18"/></svg>Advertising</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="m8 11 8-4M8 13l8 4"/></svg>Operations</span>
+          </div>
         </aside>
+
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-white" id="about">
+      <div class="container content-section">
+        <div class="section-head" data-reveal>
+          <div><h2>About the Workshop</h2></div>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p>E-commerce AI is moving from static prediction pipelines toward closed-loop systems in which agents interpret goals, use tools, retain experience, conduct experiments, and adapt decisions over time.</p>
+          <p>AOE brings these directions into one workshop. We study agents that assist shoppers and businesses, agents that improve models and pipelines, and interactive environments that reveal how each action changes what happens next.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dates">
       <div class="container">
         <div class="section-head" data-reveal>
-          <div><p class="kicker">Plan ahead</p><h2>Important dates</h2></div>
-          <p class="lead">Paper deadlines are 11:59pm Anywhere on Earth (AoE). The workshop is planned as an in-person event.</p>
+          <div><h2>Important Dates</h2></div>
+          <p class="lead">Paper deadlines are 11:59pm Anywhere on Earth (AoE).</p>
         </div>
         <div class="date-grid" data-reveal>
-          <div class="date-item"><time datetime="2026-10-25">Oct 25<br>2026</time><span>Website & CFP release</span></div>
-          <div class="date-item"><time datetime="2026-11-30">Nov 30<br>2026</time><span>Submission deadline</span></div>
+          <div class="date-item"><time datetime="2026-10-25">Oct 25<br>2026</time><span>Call for Papers release</span></div>
+          <div class="date-item is-key"><time datetime="2026-11-30">Nov 30<br>2026</time><span>Submission deadline</span></div>
           <div class="date-item"><time datetime="2026-12-18">Dec 18<br>2026</time><span>Author notification</span></div>
-          <div class="date-item"><time datetime="2027-02-19">Feb 19<br>2027</time><span>Workshop in Hong Kong</span></div>
+          <div class="date-item"><time datetime="2027-02-19">Feb 19<br>2027</time><span>Workshop</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section section-white">
+    <section class="section section-white" id="topics">
       <div class="container">
         <div class="section-head" data-reveal>
-          <div><p class="kicker">At a glance</p><h2>What belongs at AOE</h2></div>
-          <p class="lead">We welcome empirical, theoretical, systems, benchmark, dataset, and position work across the full agent-in-the-loop lifecycle.</p>
+          <div><h2>Topics of Interest</h2></div>
+          <p class="lead">We welcome empirical, theoretical, systems, benchmark, dataset, and position papers.</p>
         </div>
-        <div data-reveal>
-          <article class="topic-row"><span class="topic-number">01 / PARTICIPANTS</span><div><h3>Agents working with people and businesses</h3><p>Shopping and decision agents; merchant, advertiser, campaign, creator, service, and operations agents; preference elicitation; delegation; trust and consent.</p></div></article>
-          <article class="topic-row"><span class="topic-number">02 / SYSTEMS</span><div><h3>Agents improving e-commerce AI</h3><p>Auto-research, experiment harnesses, architecture and policy optimization, debugging, reproducibility, verification, approval gates, and rollback.</p></div></article>
-          <article class="topic-row"><span class="topic-number">03 / ENVIRONMENTS</span><div><h3>Stateful environments for learning and evaluation</h3><p>Sandboxes, world models, simulations, counterfactuals, rare-event testing, multi-stakeholder value, robustness, fairness, and safe exploration.</p></div></article>
+        <div class="loop-grid" data-reveal>
+          <article class="loop-card" data-number="01"><div class="loop-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></div><h3>Agents for E-commerce Participants</h3><ul><li>Shopping, search, and recommendation agents</li><li>Tools for merchants, advertisers, creators, and operators</li><li>Memory, delegation, trust, and human control</li></ul></article>
+          <article class="loop-card" data-number="02"><div class="loop-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.5-5.8L20 8"/><path d="M20 4v4h-4"/><path d="M20 12a8 8 0 0 1-13.5 5.8L4 16"/><path d="M4 20v-4h4"/></svg></div><h3>Agents for System Optimization</h3><ul><li>Automated research and experiment design</li><li>Model, pipeline, campaign, and policy optimization</li><li>Evaluation, monitoring, and human oversight</li></ul></article>
+          <article class="loop-card" data-number="03"><div class="loop-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="m8 11 8-4M8 13l8 4"/></svg></div><h3>Stateful Environments and Evaluation</h3><ul><li>Sandboxes, simulators, and world models</li><li>User, merchant, and marketplace simulation</li><li>Long-horizon evaluation, robustness, and safe exploration</li></ul></article>
         </div>
+        <p class="section-link" data-reveal><a href="cfp.html">View the complete Call for Papers →</a></p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container cta" data-reveal>
-        <div><p class="kicker">AOE@WSDM 2027</p><h2>Help shape reliable self-improving e-commerce systems.</h2><p>Research/system papers: up to 8 pages. Position/demo papers: up to 4 pages. References excluded.</p></div>
+    <section class="section" id="speakers">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div><h2>Invited Speakers</h2></div>
+          <p class="lead">Talk titles and abstracts will be published after the program is finalized.</p>
+        </div>
+        <div class="home-speakers" data-reveal>
+          <article><img src="assets/han-zhu.webp" alt="Han Zhu" width="720" height="720"><div><span class="tag">Confirmed</span><h3>Han Zhu</h3><p>Director of Recommender Systems, Alimama<br>Alibaba Group</p></div></article>
+          <article><img src="assets/chao-huang.webp" alt="Chao Huang" width="720" height="720"><div><span class="tag tentative">Tentative</span><h3>Chao Huang</h3><p>Assistant Professor<br>The University of Hong Kong</p></div></article>
+        </div>
+        <p class="section-link" data-reveal><a href="keynotes.html">Speaker biographies →</a></p>
+      </div>
+    </section>
+
+    <section class="section section-mint" id="submission">
+      <div class="container submission-summary" data-reveal>
+        <div><h2>Paper Submissions</h2><p>Research/system papers and position/demo papers should be 4–8 pages, excluding references, in ACM sigconf format. Reviewing is single-blind. At least one author of each accepted paper must attend and present in person.</p></div>
         <a class="button button-primary" href="cfp.html">Submission details</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><p><strong>AOE@WSDM 2027</strong><br>Agent-in-the-Loop Optimization for E-commerce AI Systems</p><p>February 19, 2027 · Hong Kong, China</p></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><p><strong>AOE@WSDM 2027</strong><br>Agent-in-the-Loop Optimization for E-commerce AI Systems</p><p>February 19, 2027 · Hong Kong, China<br><a href="mailto:tangjiakai5704@ruc.edu.cn">tangjiakai5704@ruc.edu.cn</a></p></div></footer>
   <script src="assets/site.js"></script>
 </body>
 </html>

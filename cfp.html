@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Call for papers for AOE@WSDM 2027, the Workshop on Agent-in-the-Loop Optimization for E-commerce AI Systems.">
   <title>Call for Papers · AOE@WSDM 2027</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307182b'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%2342d6d0' stroke-width='4'/%3E%3Ccircle cx='32' cy='12' r='5' fill='%23f4af4f'/%3E%3Cpath d='M19 39h26' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23dff4eb'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23248675' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='12' fill='none' stroke='%234e91bd' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23dd7d58'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -14,13 +15,15 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="cfp.html" aria-current="page">Call for Papers</a><a href="program.html">Program</a><a href="keynotes.html">Keynotes</a><a href="committee.html">Committee</a><a href="papers.html">Papers</a></nav>
   </div></header>
+
   <main id="main">
-    <section class="page-hero"><div class="container page-hero-inner"><p class="eyebrow">AOE@WSDM 2027</p><h1>Call for Papers</h1><p>Research, systems, benchmarks, datasets, and positions for reliable agent-in-the-loop optimization in e-commerce.</p></div></section>
+    <section class="page-hero"><div class="container page-hero-inner"><h1>Call for Papers</h1><p>Submissions on agents, e-commerce AI systems, interactive environments, datasets, benchmarks, and evaluation.</p></div></section>
+
     <section class="section"><div class="container page-grid">
       <article class="prose">
         <h2>About the workshop</h2>
-        <p>AOE examines e-commerce AI as a coupled system: agents support consumers and businesses, agents improve models and pipelines, and agent actions reshape the environments and evidence used for future optimization.</p>
-        <p>We invite work that advances shared abstractions, evaluation protocols, infrastructure, and design principles for self-improving e-commerce systems that remain empirically grounded, human-directed, and operationally accountable.</p>
+        <p>AOE studies e-commerce AI as a coupled system: agents support consumers and businesses, agents improve models and pipelines, and agent actions reshape the environments and evidence used for future optimization.</p>
+        <p>We invite empirical, theoretical, systems, benchmark, dataset, and position work that advances shared abstractions, evaluation protocols, infrastructure, and design principles for systems that improve through agents while preserving human direction, empirical validity, and operational accountability.</p>
 
         <h2>Topics of interest</h2>
         <h3>Interaction Loop — agents working with e-commerce participants</h3>
@@ -36,46 +39,51 @@
         <h3>System Optimization Loop — agents improving e-commerce AI systems</h3>
         <ul>
           <li>Auto-research: problem discovery, hypothesis generation, literature and code understanding, and experiment design.</li>
-          <li>Agent harnesses connecting data, code, training, evaluation, deployment, and monitoring tools.</li>
-          <li>Feature engineering, architecture search, bidding, budget pacing, campaign and policy optimization, debugging, and root-cause analysis.</li>
+          <li>Search, recommendation, and advertising harnesses connecting agents to data, code, training, evaluation, deployment, and monitoring tools.</li>
+          <li>Automated feature engineering, architecture search, bidding, budget pacing, campaign and policy optimization, debugging, and root-cause analysis.</li>
           <li>Persistent research memory, experience replay, skill libraries, and transfer across tasks or domains.</li>
           <li>Self-reflection, self-correction, self-evolution, and continual improvement under resource constraints.</li>
-          <li>Verification, reproducibility, rollback, attribution, audit trails, approval gates, and safe exploration.</li>
+          <li>Evaluation, monitoring, human oversight, and safe exploration.</li>
         </ul>
 
         <h3>Agent–Environment Loop — stateful environments for learning and evaluation</h3>
         <ul>
-          <li>Sandboxed environments with executable search, recommendation, advertising, auction, transaction, and service tools.</li>
-          <li>User, merchant, creator, and marketplace simulation; language world models; and digital twins.</li>
-          <li>Stateful catalogs, inventory, prices, promotions, auctions, budgets, exposure, orders, fulfillment, returns, and policies.</li>
-          <li>Simulator calibration, behavioral fidelity, reproducibility, controllability, and sim-to-real validation.</li>
+          <li>Sandboxed environments with executable search, recommendation, advertising, auction, transaction, and customer-service tools.</li>
+          <li>User, merchant, creator, and marketplace simulation, including language world models and digital twins.</li>
+          <li>Stateful catalogs, inventory, pricing, promotion, ad auctions, bids, budgets, exposure, orders, fulfillment, returns, and platform policies.</li>
+          <li>Simulator calibration, behavioral fidelity, controllability, and sim-to-real validation.</li>
           <li>Counterfactual interventions, rare-event generation, stress testing, and safe exploration.</li>
           <li>Long-horizon behavior, multi-stakeholder value, robustness, fairness, privacy, manipulation, and reward hacking.</li>
         </ul>
 
         <h2>Submission categories</h2>
         <div class="format-grid">
-          <div class="format-card"><span>Up to 8 pages</span><h3>Research / System Papers</h3><p>Original methods, deployed systems, empirical studies, datasets, benchmarks, and evaluation protocols.</p></div>
-          <div class="format-card"><span>Up to 4 pages</span><h3>Position / Demo Papers</h3><p>Forward-looking perspectives, negative results, work-in-progress systems, and live demonstration proposals.</p></div>
+          <div class="format-card"><span>4–8 pages</span><h3>Research / System Papers</h3><p>New methods, deployed systems, empirical studies, datasets, benchmarks, evaluation protocols, and well-grounded negative results.</p></div>
+          <div class="format-card"><span>4–8 pages</span><h3>Position / Demo Papers</h3><p>Forward-looking perspectives, research agendas, work-in-progress systems, and demonstration contributions.</p></div>
         </div>
-        <p>Page limits exclude references. Submissions should use the <strong>ACM sigconf format</strong>. Reviewing will be <strong>single-blind</strong>, and each submission will receive at least two reviews assessing relevance, technical quality, clarity, and discussion value.</p>
+        <p>Page limits exclude references. Submissions should use the <strong>ACM sigconf format</strong>. Reviewing will be <strong>single-blind</strong> to support discussion of deployed industrial systems while maintaining a rigorous conflict-of-interest process.</p>
+        <div class="award-note"><span aria-hidden="true">★</span><div><strong>Best Paper Award</strong><p>An outstanding accepted contribution will receive the AOE@WSDM 2027 Best Paper Award. Selection details will be announced with the final program.</p></div></div>
         <div class="notice"><strong>In-person participation:</strong> at least one author of each accepted paper must register, attend, and present in Hong Kong. Remote presentations will not be supported.</div>
 
-        <h2>Evaluation and reproducibility</h2>
-        <p>We encourage submissions to report agent trajectories, intervention and compute budgets, simulator assumptions, human checkpoints, failed trials, and rollback decisions. Autonomous-system papers should make validation and reproducibility choices explicit.</p>
+        <h2>Review Process</h2>
+        <p>Each submission will receive at least two reviews assessing relevance, technical quality, clarity, and potential value to the workshop discussion. Organizer submissions will be handled by independent reviewers and non-conflicted chairs.</p>
+
         <h2>Submission</h2>
-        <p>The submission portal and camera-ready instructions will be announced on this page. All paper deadlines are at <strong>11:59pm Anywhere on Earth (AoE)</strong>.</p>
+        <p>The submission portal and camera-ready instructions will be announced here. All paper deadlines are at <strong>11:59pm Anywhere on Earth (AoE)</strong>.</p>
       </article>
       <aside class="side-card" aria-label="Important dates">
         <h2>Important dates</h2><dl>
-          <dt>Website & CFP</dt><dd>October 25, 2026</dd>
+          <dt>Website &amp; CFP</dt><dd>October 25, 2026</dd>
           <dt>Submission deadline</dt><dd>November 30, 2026</dd>
           <dt>Author notification</dt><dd>December 18, 2026</dd>
           <dt>Workshop</dt><dd>February 19, 2027<br>Hong Kong, China</dd>
         </dl>
+        <span class="button button-muted" aria-disabled="true">Portal coming soon</span>
       </aside>
     </div></section>
   </main>
+
   <footer class="site-footer"><div class="container footer-inner"><p><strong>AOE@WSDM 2027</strong><br>Agent-in-the-Loop Optimization for E-commerce AI Systems</p><p>Questions: <a href="mailto:tangjiakai5704@ruc.edu.cn">tangjiakai5704@ruc.edu.cn</a></p></div></footer>
   <script src="assets/site.js"></script>
-</body></html>
+</body>
+</html>

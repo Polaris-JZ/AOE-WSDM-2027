@@ -8,9 +8,16 @@
       toggle.setAttribute('aria-expanded', String(!open));
       nav.classList.toggle('is-open', !open);
     });
+
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+      });
+    });
   }
 
-  const observers = document.querySelectorAll('[data-reveal]');
+  const items = document.querySelectorAll('[data-reveal]');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -19,9 +26,9 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
-    observers.forEach(function (item) { observer.observe(item); });
+    }, { threshold: 0.1 });
+    items.forEach(function (item) { observer.observe(item); });
   } else {
-    observers.forEach(function (item) { item.classList.add('is-visible'); });
+    items.forEach(function (item) { item.classList.add('is-visible'); });
   }
 })();
